@@ -143,6 +143,8 @@ public class ESMovieManager {
 		
 		// Extract the movies from the esResponse and put them in result
 
+		movies = esResponse.getHits();
+		
 		movies.notifyObservers();
 	}
 }
